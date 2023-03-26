@@ -16,3 +16,9 @@ git clone https://ghproxy.com/https://github.com/d8ahazard/sd_dreambooth_extensi
 git clone https://ghproxy.com/https://github.com/Mikubill/sd-webui-controlnet.git
 
 bash webui.sh --port 6006 --xformers --skip-install
+
+玩过deepface 直接用里面的scr面部提取
+自己跑个明星的模型看看是不是照片的问题
+我是如果想出的图也是大头/半身照的话，训练集就截大头/半身照，如果想要全身照的话，训练集就截全身，想要人物脸更像的话分辨率可以设大一点，768*768就行，训练速度也不会太慢
+别人总结的，你可以做个参考，另外如果素材背景单一的话可以不用P
+平视（正反侧（左右））、45度仰视（正反侧（左右））、45度俯视（正反侧（左右））、大头（平正）、上半身（平正）、多上半身（平正）、多下半身（平正）、手（平侧）、脚（平正）、胸像（平正）、其它：人物细节图片（平正侧）
