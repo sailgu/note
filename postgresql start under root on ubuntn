@@ -8,3 +8,5 @@
 8. 将刚刚创建的用户设置为密码登录 
 local   all             usename                                   scram-sha-256
 9. 以后就像用mysql 用 postgresql 了。
+
+sudo -u postgres psql -c 'SHOW config_file'  定位配置文件
