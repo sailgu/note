@@ -1,0 +1,9 @@
+1. su - postgres  刚装完只能切换到postgres下操作
+2. psql  进入sql shell 下去创建用户和database
+3. CREATE USER username CREATEDB REPLICATION PASSWORD 'password';  创建用户
+4. exit; 退出 sql shell
+5. createdb -O usename database_name; 创建属于刚刚创建的用户的database
+6. exit; 
+7. 找到 /etc/postgresql/main/pg_hba.conf 
+8. 将刚刚创建的用户设置为密码登录 
+local   all             usename                                   scram-sha-256
